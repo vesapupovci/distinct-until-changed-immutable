@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "semicolon": {
+      "options": "always"
+    },
+    "trailing-comma": {
+      "options": {
+        "multiline": "always"
+      }
+    },
+    "curly": true,
+    "prefer-const": true
+  }
+}

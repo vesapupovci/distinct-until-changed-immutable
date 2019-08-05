@@ -19,7 +19,7 @@ Returns an Observable that emits all items emitted by the source Observable that
  ```
  
  An example using a compare function
- ```typescript
+ ```javascript
  import { of } from 'rxjs';
  import { distinctUntilChangedImmutable } from 'rxjs/operators';
  

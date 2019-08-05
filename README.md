@@ -1,5 +1,24 @@
 # Distinct Until Changed Immutable
 
+### tl;dr
+
+Install:
+
+`npm i -S distinct-until-changed-immutable`
+
+then import:
+
+`import { distinctUntilChangedImmutable } from 'distinct-until-changed-immutable';`
+
+then use: 
+
+```javascript
+of({a: 'a'}, {b: 'b'}, {b: 'b'})
+  .pipe(
+    distinctUntilChangedImmutable(),
+  )
+```
+___
 Returns an Observable that emits all items emitted by the source Observable that are deeply distinct by comparison from the previous item.
  
  If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
@@ -21,7 +40,7 @@ Returns an Observable that emits all items emitted by the source Observable that
  An example using a compare function
  ```javascript
  import { of } from 'rxjs';
- import { distinctUntilChangedImmutable } from 'rxjs/operators';
+ import { distinctUntilChangedImmutable } from 'distinct-until-changed-immutable';
  
  interface Person {
     age: number,
